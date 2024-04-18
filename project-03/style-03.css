@@ -1,0 +1,88 @@
+body {
+  font-family: "Helvetica", "Arial", sans-serif;
+  line-height: 1.5;
+  max-width: 960px;
+  margin: 20px auto;
+  display: grid;
+  grid-template-columns: 300px;
+  grid-template-rows: 100px;
+  grid-gap: 20px;
+}
+
+h1 {
+  margin-top: 0;
+}
+
+header {
+  padding: 20px;
+}
+
+header,
+nav,
+footer {
+  background-color: rgb(30, 181, 58);
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+section {
+  color: #000000;
+  background-color: rgb(252, 209, 22);
+  padding: 20px;
+}
+
+header,
+footer {
+  padding: 10px;
+}
+
+alt-bg {
+  background-color: rgba(201, 53, 68, 0.2); 
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-gap: 30px;
+  margin: 20px auto;
+  grid-template-areas:
+    "introduction introduction"
+    "navigation"
+    "people-and-society energy-production"
+    "transportation";
+}
+
+img {
+  float: left;
+  margin: 5px;
+}
+
+#introduction {
+  grid-area: introduction;
+}
+
+#people-and-society {
+  grid-area: people-and-society;
+}
+
+#energy-production {
+  grid-area: energy-production;
+  table, th, td {
+    border: 1px solid;
+  }
+}
+
+#transportation {
+  grid-area: transportation;
+  table, th, td {
+    border: 1px solid;
+  }
+}
+
+a:hover {
+  background-color: rgb(252, 209, 22)
+}
+
+a:active {
+  background-color: rgb(0, 163, 221)
+}
