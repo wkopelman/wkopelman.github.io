@@ -8,21 +8,21 @@ h1 {
   background-color: rgb(0, 0, 0);
   margin-top: 0;
   padding: 20px;
+  max-width: 960px;
 }
 
 header,
-nav, 
+nav,
 footer {
   font-family: "Arimo";
   background-color: rgb(0, 0, 0);
   padding: 20px;
+  max-width: 960px;
 }
 
 section {
-  grid-template-columns: 1 / span 1;
   color: #c7c8cc;
   background-color: rgb(0, 0, 0);
-  font-family: "Arimo";
   padding: 20px;
   margin: 20px;
 }
@@ -34,17 +34,9 @@ alt-bg {
 main {
   display: grid;
   grid-gap: 30px;
-  grid-template-columns: 1fr 1fr;
-  grid-template-areas:
-    "about"
-    "navigation"
-    "baseball"
-    "soccer"
-    "basketball"
-    "lacrosse"
-    "rowing"
-    "softball";
-    margin: 0 auto;
+  grid-template-columns: 2fr 1fr;
+  margin: 0 auto;
+  max-width: 960px;
 }
 
 p {
@@ -54,13 +46,14 @@ p {
 
 img {
   float: left;
-  padding: 10px;
+  padding: 20px;
   margin: 15px;
 }
 
 #about {
   grid-area: about;
   padding: 10px;
+  max-width: 960px;
 }
 
 #baseball {
