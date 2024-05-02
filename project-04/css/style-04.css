@@ -42,8 +42,7 @@ main {
   grid-gap: 30px;
   grid-template-areas:
     "about about"
-    "navigation"
-    "baseball"
+    "navigation" "baseball"
     "soccer"
     "basketball"
     "lacrosse"
